@@ -6,9 +6,6 @@
 <script>
 
 export default {
-  name: 'Home',
-  components: {
-    Chat
-  }
+  name: 'Home'
 }
 </script>

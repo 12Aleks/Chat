@@ -1,26 +1,15 @@
 <template>
-
-    <component :is="layout">
-        <router-view/>
-    </component>
-
+    <v-app>
+        <real-time-demo />
+    </v-app>
 </template>
 
 <script>
-    import MainLayout from "./layouts/MainLayout";
-
+    import RealTimeDemo from './components/RealTimeDemo.vue'
     export default {
         name: 'App',
         components: {
-            MainLayout
-        },
-        computed: {
-            layout() {
-                return (this.$route.meta.layout || 'empty') + '-layout'
-            }
-        },
+            RealTimeDemo
+        }
     }
 </script>
-<style>
-
-</style>
